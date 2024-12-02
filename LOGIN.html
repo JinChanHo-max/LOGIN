@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+
+        h1 {
+            text-align: center;
+            color: red;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Jaini', Arial, sans-serif;
+            font-size: large;
+            background-color: black;
+            color: red;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login {
+            background-color: black;
+            padding: 100px;
+            border-radius: 1px;
+            box-shadow: 0 0 10px darkgrey;
+            width: 500px;
+        }
+
+        .login input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: black;
+        }
+
+        .login input[type="submit"] {
+            background-color: red;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .login input[type="submit"]:hover {
+            background-color: darkred;
+        }
+
+        .login .help {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login .help a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+        <a style="text-decoration: none; "href="./홍보남_홈페이지.html">
+            <h1>TONG</h1>
+        </a>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="이메일을 입력하세요." required>
+            <input type="password" name="password" placeholder="비밀번호를 입력하세요." required>
+            <input type="submit" value="로그인">
+        </form>
+        <div class="help">
+            <p><a href="#">아이디 찾기</a></p>
+            <p><a href="#">비밀번호 찾기</a></p>
+            <p><a href="#">회원가입</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
